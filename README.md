@@ -1,6 +1,6 @@
 # Hi, I'm Riya 👋
 
-I'm a data scientist with an **MSc in Health Data Science** from the University of Birmingham Dubai. I build and evaluate
+I'm a data scientist with an **MSc in Health Data Science (Distinction)** from the University of Birmingham Dubai. I build and evaluate
 machine-learning systems for healthcare, on multimodal data that spans multi-omics, medical imaging, and
 clinical records. My focus is what decides whether a model is actually used: whether it can be explained,
 audited, and trusted. In healthcare that means designing for clinical sign-off and regulation from the start.
