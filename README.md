@@ -1,9 +1,9 @@
 # Hi, I'm Riya 👋
 
-I'm a data scientist with an **MSc in Health Data Science (Distinction)** from the University of Birmingham Dubai. I build and evaluate
-machine-learning systems for healthcare, on multimodal data that spans multi-omics, medical imaging, and
-clinical records. My focus is what decides whether a model is actually used: whether it can be explained,
-audited, and trusted. In healthcare that means designing for clinical sign-off and regulation from the start.
+I'm a data scientist in Dubai with an **MSc in Health Data Science (Distinction)** from the University of
+Birmingham Dubai. I build machine-learning and AI systems with Python and SQL, then test whether they can be
+trusted before anyone relies on them: how they fail, when their confidence misleads, and what decision they
+should actually support.
 
 ---
 
@@ -19,19 +19,40 @@ the model's own confidence missed.
 
 ---
 
-## Focus Areas
+## What I Do
 
-I work end to end, from raw data to the evidence a model needs before anyone signs it off. My main areas:
-
-- **Machine learning on multimodal data**, across multi-omics, medical imaging, and clinical or tabular records
-- **Explainable and responsible AI**, including model auditing, model risk, and SHAP-based interpretation
-- **Simulation, decision analysis, and risk modelling**, from Monte Carlo cost-effectiveness to risk scoring
-- **Data governance and regulation**, from data-fabric design to privacy and compliance frameworks
-- **Critical appraisal and communication**, including how data and figures can mislead
+- **Build predictive models and AI tools**: Python, SQL, PyTorch and scikit-learn, from data extraction to a
+  deployed product
+- **Evaluate and stress-test models**: performance under new data, subgroup failures, uncertainty, and
+  results reported honestly even when they disappoint
+- **Work with LLMs and AI agents**: LLM-based applications with structured outputs and fallbacks, and agentic
+  workflows that review and check work
+- **Turn analysis into decisions**: risk scoring, simulation and cost-effectiveness, explained clearly to
+  people who are not technical
+- **Make work reproducible**: Git, Docker, Linux HPC, fixed seeds, and pipelines someone else can rerun
 
 ---
 
 ## Selected Projects
+
+### [Diabetic Retinopathy Algorithmic Audit](https://github.com/riyashet-hds/dr-algorithmic-audit)
+
+A safety audit of a diabetic retinopathy classifier using the Medical Algorithmic Audit framework.
+
+**Methods:** algorithmic auditing, subgroup testing, adversarial robustness, FMEA risk scoring
+**Impact:** A 0.88 headline score hid only 48.6% sensitivity on the most urgent grade; failure modes ranked the
+way a model-risk review would
+**Tools:** Python, PyTorch
+
+### [Health-Economic Simulation of AI Triage](https://github.com/riyashet-hds/health-economic-simulation-ai-triage)
+
+A Monte Carlo framework that estimates whether an AI triage tool is worth funding, running synthetic cohorts
+through two care pathways.
+
+**Methods:** cohort of 10,050 admissions extracted from MIMIC-IV with SQL (BigQuery), Monte Carlo over 10,000
+runs, Bayesian updating, ICER and QALYs, sensitivity analysis
+**Impact:** Turns an accuracy question into a cost-effectiveness decision under uncertainty
+**Tools:** Python, SQL (BigQuery), NumPy, SciPy
 
 ### [TracHeal: Post-Discharge Care-Continuity Tool](https://github.com/riyashet-hds/trachealhackathon)
 
@@ -50,23 +71,6 @@ cancer, comparing intermediate and late fusion.
 **Impact:** Recovers coherent shared biology and verified markers, while showing fusion adds little to raw prediction
 **Tools:** Python, R (mixOmics), scikit-learn
 
-### [Diabetic Retinopathy Algorithmic Audit](https://github.com/riyashet-hds/dr-algorithmic-audit)
-
-A safety audit of a diabetic retinopathy classifier using the Medical Algorithmic Audit framework.
-
-**Methods:** algorithmic auditing, subgroup testing, adversarial robustness, FMEA risk scoring
-**Impact:** Exposes failure modes that headline accuracy hides, scored the way a model-risk review would
-**Tools:** Python
-
-### [Health-Economic Simulation of AI Triage](https://github.com/riyashet-hds/health-economic-simulation-ai-triage)
-
-A Monte Carlo framework that estimates whether an AI triage tool is worth funding, running synthetic cohorts
-through two care pathways.
-
-**Methods:** Monte Carlo, Bayesian updating, ICER and QALYs, one-way sensitivity analysis
-**Impact:** Turns an accuracy question into a cost-effectiveness decision under uncertainty
-**Tools:** Python, NumPy, SciPy
-
 ---
 
 ## More Projects
@@ -74,7 +78,7 @@ through two care pathways.
 - **[Retinal Fundus Classification](https://github.com/riyashet-hds/retinal-fundus-classification):**
   transfer learning that compares CNNs and Vision Transformers for diabetic retinopathy grading, with Grad-CAM.
   *(Python, PyTorch)*
-- **[Healthcare Revenue Cycle Risk Prediction](https://github.com/riyashet-hds/healthcare-ftr-prediction):**
+- **[Healthcare Financial-Toxicity Risk Prediction](https://github.com/riyashet-hds/healthcare-ftr-prediction):**
   flags patient-level financial risk on synthetic EHR data so a billing team can intervene early, with about a
   9.4x lift over baseline. *(Python, scikit-learn)*
 
@@ -97,49 +101,36 @@ More on my [repositories](https://github.com/riyashet-hds?tab=repositories).
 
 ## What I'm Looking For
 
-Roles where I take models from data to deployment in settings where the result has to be trusted: clinical,
-regulated, or otherwise high-stakes. I'm most engaged by:
-
-- Applied machine learning and responsible AI
-- Model risk, auditing, and evaluation
-- Simulation, decision analysis, and risk modelling
-
-I'm drawn to teams that treat explainability and real-world deployment as part of the engineering, not an
-afterthought.
+Data science, AI engineering and AI analyst roles where results have to be trusted: healthcare and health
+insurance, banking and fintech, and government and public-sector AI. I'm especially interested in teams that
+are moving AI from pilots into real use, and that care whether it works.
 
 ---
 
 ## Technical Skills
 
-**Programming Languages**
-Python (pandas, scikit-learn, SHAP, PyTorch, matplotlib) • R (mixOmics, tidyverse, statistical modelling)
+**Languages and data:** Python (pandas, NumPy, scikit-learn, PyTorch, SHAP) • SQL (Google BigQuery) • R
+(tidyverse, mixOmics)
 
-**Machine Learning**
-Classification • Survival analysis • Model stacking and fusion • Explainability and model auditing (SHAP,
-surrogate models) • Transfer learning
+**Machine learning:** classification and risk models • deep learning and computer vision • ensembles and
+uncertainty • model evaluation, auditing and robustness testing • explainability (SHAP)
 
-**Quantitative Methods**
-Monte Carlo simulation • Bayesian updating • Cost-effectiveness and decision analysis • Risk scoring •
-Sensitivity analysis
+**AI and LLMs:** LLM application development (Gemini, DeepSeek APIs) with structured outputs and fallback
+chains • agentic workflows with Claude Code • prompt design
 
-**Health and Multi-Omics Data**
-Multi-omics integration (DIABLO, rCCA) • EHR and claims data • Pharmacogenomics • Medical imaging • Data
-governance (PDPL, ADHICS, SaMD)
+**Engineering:** Git and GitHub • Docker • Linux HPC (SLURM) • Flask REST APIs • CI smoke tests • Vercel
 
-**Tools**
-Git/GitHub • Jupyter • RStudio • Reproducible workflows • BioRender
+**Quantitative methods:** statistics • Monte Carlo simulation • Bayesian updating • cost-effectiveness and
+decision analysis • sensitivity analysis
+
+**Domains:** healthcare data (EHR, medical imaging, claims, multi-omics) • data governance (UAE PDPL, ADHICS)
 
 ---
 
-## Regional Focus
+## Based in Dubai
 
-Based in **Dubai, UAE**. Open to roles in the UAE or remote.
-
-I'm especially drawn to challenges that matter in the Gulf and Middle East:
-
-- Precision medicine and genomics in diverse populations
-- Equitable, well-governed health-data systems
-- Risk, cost, and decision modelling for health and public services
+Based in **Dubai, UAE**, and open to roles across the UAE. I expect to hold a UAE Golden Visa from
+December 2026.
 
 ---
 
