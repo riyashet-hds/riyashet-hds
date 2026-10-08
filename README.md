@@ -1,11 +1,21 @@
 # Hi, I'm Riya 👋
 
-I'm an **MSc Health Data Science student** at the University of Birmingham. I build and evaluate
+I'm a data scientist with an **MSc in Health Data Science** from the University of Birmingham Dubai. I build and evaluate
 machine-learning systems for healthcare, on multimodal data that spans multi-omics, medical imaging, and
 clinical records. My focus is what decides whether a model is actually used: whether it can be explained,
 audited, and trusted. In healthcare that means designing for clinical sign-off and regulation from the start.
 
-Right now I'm finishing my MSc dissertation on brain-tumour segmentation.
+---
+
+## Publication
+
+**Shet R.D., Zhang L. (2026).** *Reliability analysis for BraTS-GoAT segmentation: a controlled robustness
+study of deep-ensemble uncertainty.* MICCAI 2026 Satellite Events (BraTS-GoAT workshop), Springer LNCS 17254.
+[Paper](https://papers.miccai.org/miccai-2026-sat/BraTS_GoAT_015.html) · [Code](https://github.com/riyashet-hds/brats-goat-reliability)
+
+My MSc dissertation, as a first-author paper. Under simulated scanner and protocol shift, a single model's
+confidence stayed flat while its accuracy fell. Disagreement across a deep ensemble caught the shift that
+the model's own confidence missed.
 
 ---
 
@@ -22,6 +32,14 @@ I work end to end, from raw data to the evidence a model needs before anyone sig
 ---
 
 ## Selected Projects
+
+### [TracHeal: Post-Discharge Care-Continuity Tool](https://github.com/riyashet-hds/trachealhackathon)
+
+A clinical decision-support MVP built and deployed in 48 hours at the Harvard HSIL Hackathon 2026. It reads
+discharge notes and flags the follow-up gaps that put patients at risk after they go home.
+
+**My role:** team lead; output schema, risk framework, integration of the team's components, deployment
+**Tools:** Python (Flask), LLM APIs with a fallback chain, CI smoke tests, Vercel
 
 ### [Multimodal Integration for Colorectal Cancer](https://github.com/riyashet-hds/crc-multimodal-integration)
 
@@ -40,7 +58,7 @@ A safety audit of a diabetic retinopathy classifier using the Medical Algorithmi
 **Impact:** Exposes failure modes that headline accuracy hides, scored the way a model-risk review would
 **Tools:** Python
 
-### [Health-Economic Simulation of AI Triage](https://github.com/riyashet-hds/health-economic-simulation)
+### [Health-Economic Simulation of AI Triage](https://github.com/riyashet-hds/health-economic-simulation-ai-triage)
 
 A Monte Carlo framework that estimates whether an AI triage tool is worth funding, running synthetic cohorts
 through two care pathways.
@@ -134,4 +152,4 @@ decisions.
 **LinkedIn:** [linkedin.com/in/riyashet](https://www.linkedin.com/in/riyashet)
 **Email:** riyashet.psy@gmail.com
 
-**Updated:** June 2026
+**Updated:** October 2026
