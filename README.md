@@ -35,6 +35,17 @@ the model's own confidence missed.
 
 ## Selected Projects
 
+### [Closing-Auction Price Prediction with Calibrated Uncertainty](https://github.com/riyashet-hds/optiver-closing-auction-analysis)
+
+Nasdaq closing-auction order-book data (Optiver Kaggle; 5.2M snapshots, 200 stocks, 481 days), with a
+five-page Power BI report.
+
+**Methods:** LightGBM with a time-based split, error analysis, TreeSHAP, conformalized quantile regression
+with per-stock and adaptive calibration
+**Impact:** Acting only on the most confident half of predictions cut error by 30%; tracing coverage failures
+to volatility jumps lifted the worst stock from 59% to 74% coverage
+**Tools:** Python, LightGBM, Power BI (DAX, Power Query)
+
 ### [Diabetic Retinopathy Algorithmic Audit](https://github.com/riyashet-hds/dr-algorithmic-audit)
 
 A safety audit of a diabetic retinopathy classifier using the Medical Algorithmic Audit framework.
@@ -118,10 +129,10 @@ uncertainty • model evaluation, auditing and robustness testing • explainabi
 **AI and LLMs:** LLM application development (Gemini, DeepSeek APIs) with structured outputs and fallback
 chains • agentic workflows with Claude Code • prompt design
 
-**Engineering:** Git and GitHub • Docker • Linux HPC (SLURM) • Flask REST APIs • CI smoke tests • Vercel
+**Engineering:** Git and GitHub • Power BI (DAX, Power Query) • Docker • Linux HPC (SLURM) • Flask REST APIs • CI smoke tests • Vercel
 
 **Quantitative methods:** statistics • Monte Carlo simulation • Bayesian updating • cost-effectiveness and
-decision analysis • sensitivity analysis
+decision analysis • sensitivity analysis • conformal prediction
 
 **Domains:** healthcare data (EHR, medical imaging, claims, multi-omics) • data governance (UAE PDPL, ADHICS)
 
